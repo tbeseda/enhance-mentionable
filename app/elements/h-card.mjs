@@ -1,5 +1,7 @@
 /** @type {import('@enhance/types').EnhanceElemFn} */
-export default function HCard({ html }) {
+export default function HCard({ html, state: { attrs } }) {
+  const enableAuthor = typeof attrs?.['enable-author'] === 'string'
+
   return html`
     <style>
       section {
@@ -24,6 +26,8 @@ export default function HCard({ html }) {
         font-size: 1.2rem;
       }
     </style>
+
+    ${enableAuthor ? `<span class="p-author hidden">Taylor Beseda</span>` : ''}
 
     <section class="h-card">
       <img class="u-photo" src="https://github.com/tbeseda.png" alt="Taylor Beseda">

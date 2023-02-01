@@ -8,6 +8,7 @@ A simple Enhance website that can receive webmentions.
   - ingest form urlencoded POSTs
   - verify the body is a valid webmention
   - check that the "source" actually links to the "target"
+  - look for "microformats" therein and attach relevant data to mention
   - store the webmention in a database
 - `/admin` to approve/reject mentions
   - protected by simple secret password

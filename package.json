@@ -1,0 +1,16 @@
+{
+  "name": "enhance-mentionable",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "sandbox"
+  },
+  "dependencies": {
+    "@architect/functions": "^5.3.3",
+    "@enhance/arc-plugin-enhance": "^4.4.1",
+    "microformats-parser": "^1.4.1"
+  },
+  "devDependencies": {
+    "@architect/architect": "^10.9.2",
+    "@enhance/types": "^0.5.0"
+  }
+}

@@ -1,0 +1,24 @@
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  input {
+    padding: 0.5rem;
+    border: 1px solid var(--secondary-100);
+  }
+  button {
+    padding: 0.5rem;
+    border: 1px solid var(--secondary-100);
+  }
+</style>
+
+<main>
+  <form method="post" action="/login">
+    <input type="password" name="password" placeholder="Secret, plz">
+    <button>Login</button>
+  </form>
+</main>

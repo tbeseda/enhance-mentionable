@@ -1,0 +1,70 @@
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  article {
+    display: flex;
+    margin-bottom: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    border-bottom: 1px solid #eaecef;
+  }
+  article time {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  article .content p {
+    margin-bottom: 0.85rem;
+    line-height: 1.375;
+    letter-spacing: 0.025rem;
+    font-size: 1.2rem;
+  }
+  article blockquote {
+    margin-bottom: 0.85rem;
+    padding: 0.85rem;
+    border-left: 0.25rem solid var(--secondary-100);
+  }
+
+  #webmentions {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 65%;
+    margin: 0 auto;
+  }
+  #webmentions h2 {
+    margin-bottom: 0.85rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+</style>
+
+<main>
+  <article class="h-entry">
+    <h1 class="p-name">✨ Enhance Mentionable</h1>
+    <h2 class="h2-summary">A simple way to add mentions to your Enhance website.</h2>
+    <time class="dt-published" datetime="2023-02-01">February 1, 2023</time>
+    <!-- Author may not be extracted from h-card by some microformats parsers: -->
+    <span class="p-author hidden">Taylor Beseda</span>
+    <h-card></h-card>
+    <div class="content">
+      <blockquote>
+        <p>Webmention is a simple way to notify any URL when you mention it on your site. From the receiver's perspective, it's a way to request notifications when other sites mention it.</p>
+        <cite>- W3C &nbsp;<a href="https://www.w3.org/TR/webmention/" target="_blank">https://www.w3.org/TR/webmention/</a></cite>
+      </blockquote>
+      <p>Finally, a link to <a href="https://tbeseda.com/articles/2023/01/webmention-test" target="_blank">my site</a> that accepts webmentions.</p>
+    </div>
+  </article>
+
+  <section id="webmentions">
+    <h2>💬 Webmentions</h2>
+    <webmentions-list></webmentions-list>
+  </section>
+</main>

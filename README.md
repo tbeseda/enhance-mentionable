@@ -2,6 +2,11 @@
 
 A simple Enhance website that can receive webmentions.
 
+## Recent Changes
+
+- scripts/send-webmentions.mjs can now send multiple mentions
+- more logging in the webmention endpoint
+
 ## Features
 
 - a `/webmention` endpoint
@@ -40,7 +45,7 @@ Most of the code here is trying to scrape the incoming source for info about the
 
 ### Send Webmentions
 
-Be sure to update `scripts/send-webmentions.js` first.
+Node 18 required locally! Be sure to update `scripts/send-webmentions.js` first.
 
 ```sh
 node scripts/send-webmentions.mjs

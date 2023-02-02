@@ -30,6 +30,13 @@
     padding: 0.85rem;
     border-left: 0.25rem solid var(--secondary-100);
   }
+  article ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 0.85rem;
+  }
 
   #webmentions {
     display: flex;
@@ -57,12 +64,18 @@
         <p>Webmention is a simple way to notify any URL when you mention it on your site. From the receiver's perspective, it's a way to request notifications when other sites mention it.</p>
         <cite>- W3C &nbsp;<a href="https://www.w3.org/TR/webmention/" target="_blank">https://www.w3.org/TR/webmention/</a></cite>
       </blockquote>
-      <p>Finally, a link to <a href="https://tbeseda.com/articles/2023/01/webmention-test" target="_blank">my site</a> that accepts webmentions.</p>
     </div>
+    <h3>Outbound Webmention Frens:</h3>
+    <ul>
+      <li><a href="https://nature-6o8.begin.app/" target="_blank">Cole</a></li>
+      <li><a href="https://tbeseda.com/articles/2023/01/webmention-test" target="_blank">tbeseda's blog</a></li>
+      <li>Bethel</li>
+      <li>KJ</li>
+    </ul>
   </article>
 
   <section id="webmentions">
-    <h2>💬 Webmentions</h2>
+    <h2>💬 Inbound Webmentions</h2>
     <webmentions-list></webmentions-list>
   </section>
 </main>

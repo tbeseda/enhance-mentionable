@@ -16,5 +16,5 @@ webmentions
 webmentions
   targetPath *String
 
-@begin
-appID MBCJQZQF
+# @begin
+# appID MBCJQZQF # tbeseda's appID

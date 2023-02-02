@@ -40,6 +40,10 @@ export default function Head({ req }) {
           font-size: 1.5rem;
           font-weight: 400;
         }
+        h3 {
+          font-size: 1.2rem;
+          font-weight: 400;
+        }
         a {
           color: var(--primary-600);
           text-decoration: underline;

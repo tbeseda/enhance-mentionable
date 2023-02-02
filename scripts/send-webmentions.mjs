@@ -8,6 +8,10 @@ const mentions = {
     source: myContent,
     target: 'https://making-2c4.begin.app/',
   },
+  'https://rain-5h6.begin.app/webmention': { // KJ
+    source: myContent,
+    target: 'https://rain-5h6.begin.app/',
+  },
   'https://tbeseda.com/webmention': { // tbeseda.com test article
     source: myContent,
     target: 'https://tbeseda.com/articles/2023/01/webmention-test',

@@ -6,6 +6,7 @@ A simple Enhance website that can receive webmentions.
 
 - scripts/send-webmentions.mjs can now send multiple mentions
 - more logging in the webmention endpoint
+- `@aws runtime nodejs18.x`!
 
 ## Features
 

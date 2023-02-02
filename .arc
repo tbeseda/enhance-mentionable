@@ -18,3 +18,6 @@ webmentions
 
 # @begin
 # appID MBCJQZQF # tbeseda's appID
+
+@aws
+runtime nodejs18.x

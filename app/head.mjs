@@ -13,7 +13,7 @@ export default function Head({ req }) {
 
       <title>${title}</title>
 
-      <link rel="webmention" href="https://making-2c4.begin.app/webmention">
+      <!-- <link rel="webmention" href="https://making-2c4.begin.app/webmention"> -->
       <link rel="stylesheet" href="/enhance-styles.css">
       <link rel="icon" href="/_public/favicon.svg">
 

@@ -26,9 +26,11 @@ A simple Enhance website that can receive webmentions.
 
 Or just copy the files you need.
 
-### Update the personal identity details
+### Update identity details
 
 `app/elements/h-card.mjs` has most references you'll want to change.
+
+Change the url in the rel=webmention link in `app/head.mjs` to your deployed endpoint.
 
 ### Layout & Styling
 
@@ -57,3 +59,11 @@ Note: you can't webmention yourself.
 ### Change database seed
 
 See `./sandbox-seed.js`.
+
+## Improvements
+
+- when `@events` works on Begin, move the webmention endpoint to an event handler
+- incoming, pending mentions could be displayed alongside content if the admin is logged in
+- lots of the identity details could be dynamic and stored in the db
+- if content data is stored and published as part of a lifecycle, we could discover and queue up outbound webmentions
+- instead of overwriting incoming duplicate mentions, there should be an update process. probably an intermediare data model

@@ -12,6 +12,10 @@ const mentions = {
     source: myContent,
     target: 'https://rain-5h6.begin.app/',
   },
+  'https://sweet-1c7.begin.app/webmention': { // Simon
+    source: myContent,
+    target: 'https://sweet-1c7.begin.app/',
+  },
   'https://tbeseda.com/webmention': { // tbeseda.com test article
     source: myContent,
     target: 'https://tbeseda.com/articles/2023/01/webmention-test',
@@ -24,14 +28,14 @@ for (const [endpoint, webmention] of Object.entries(mentions)) {
     body: new URLSearchParams(webmention),
   })
 
-  let message
+  let message = `<${endpoint}>: `
   if (response.ok) {
     const contentType = response.headers.get('content-type')
-    message = contentType?.startsWith('application/json')
+    message += contentType?.startsWith('application/json')
       ? await response.json()
       : await response.text()
   } else {
-    message = `Error ${response.status}: ${response.statusText}`
+    message += `Error ${response.status}: ${response.statusText}`
   }
 
   console.log(message)

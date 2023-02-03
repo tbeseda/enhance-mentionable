@@ -66,4 +66,5 @@ See `./sandbox-seed.js`.
 - incoming, pending mentions could be displayed alongside content if the admin is logged in
 - lots of the identity details could be dynamic and stored in the db
 - if content data is stored and published as part of a lifecycle, we could discover and queue up outbound webmentions
+- related to the above: handle mention deletes
 - instead of overwriting incoming duplicate mentions, there should be an update process. probably an intermediare data model
